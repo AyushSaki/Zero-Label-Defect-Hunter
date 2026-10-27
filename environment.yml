@@ -1,0 +1,26 @@
+# Conda environment for Zero-Label Defect Hunter
+# Create with:
+#   conda env create -f environment.yml
+#   conda activate defect-hunter
+
+name: defect-hunter
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pytorch::pytorch>=2.0
+  - pytorch::torchvision
+  - numpy>=1.24
+  - pillow>=10.0
+  - scikit-learn>=1.3
+  - joblib
+  - matplotlib
+  - pandas
+  - jupyterlab
+  - pip
+  - pip:
+      - opencv-python-headless>=4.8.0
+      - Flask>=3.0.0
+      - tqdm

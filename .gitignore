@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model & runtime artefacts (keep folder, ignore large files)
+models/*.pkl
+models/*.pth
+models/*.pt
+uploads/*
+!uploads/.gitkeep
+static/results/*
+!static/results/.gitkeep
+results/inspection_history.csv
+results/predictions/*
+!results/predictions/.gitkeep
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Data (optional – comment out if you want to ship sample images)
+# data/
